@@ -6,3 +6,4 @@ I've made an outline for Assignment 3, with TODO's and some basic documentations
 When making a commit.
 * Write your name
 * Write a short comment explaining what you've done
+* Do not remove the TODO, instead change its content to explain what should be done next
