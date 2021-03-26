@@ -1,4 +1,5 @@
 //walid ownership copyright ananas
+//omar ownership tomato
 
 package classes;
 
@@ -16,15 +17,15 @@ public class Triangle extends  GeometricObject{
     }
     public double getArea()
     {
-        double semipermiter=side1+side2+side3;
-        double area= Math.sqrt(semipermiter*(semipermiter-side1)*(semipermiter-side2)*(semipermiter*side3));
+        double semiperimeter = this.getPerimeter() / 2;
+        double area= Math.sqrt(semiperimeter * (semiperimeter-side1) * (semiperimeter-side2) * (semiperimeter*side3));
                 return area;
     }
 
-    public double getpermiter()
+    public double getPerimeter()
     {
-        double permiter=side1+side3+side2;
-        return permiter;
+        double Perimeter = side1 + side3 + side2;
+        return Perimeter;
     }
 
     @Override
