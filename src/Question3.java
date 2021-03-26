@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Question3 {
     public static  void main(String[] args) {
-        //Question.3
+        //Question.3 _ By Yours
         Scanner Input = new Scanner(System.in);
         ArrayList<Integer> list = new ArrayList<>();
         System.out.println("Question.3:\n\tEnter the Numbers to store (enter exit to stop): ");
