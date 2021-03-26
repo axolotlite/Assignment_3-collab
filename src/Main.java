@@ -1,4 +1,5 @@
-package com.company;
+//commented out due to lack of com.company in this file hierarchy.
+//package com.company;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
