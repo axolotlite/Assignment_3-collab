@@ -12,11 +12,27 @@
  */
 
 public class GroceryList {
-    //TODO implement the variables
+	//TODO implement the variables
+	private ArrayList<GroceryItemOrder> list = new ArrayList<>();
+	//TODO implement a constructor
+	public GroceryList() {
+	}
 
-    //TODO implement a constructor
+	//TODO implement the method add
+	public void add(GroceryItemOrder item) {
+	if(list.size() < 10)    list.add(item);
+	}
 
-    //TODO implement the method add
-
-    //TODO implement the method getTotalCost
+	//TODO implement the method getTotalCost
+	public double getTotalCost() {
+	double cost = 0;
+	for (GroceryItemOrder groceryItemOrder : list) {
+	    cost += groceryItemOrder.getCost();
+	}
+	return cost;
+   	}
+   	//Method to allow setting quantity through the GroceryList object
+   	public void setQuantity(int index, int quantity) {
+        list.get(index).setQuantity(quantity);
+    	}
 }
