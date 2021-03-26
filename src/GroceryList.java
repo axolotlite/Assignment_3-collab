@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Sheet 4 Question 6
  * <p>
@@ -6,7 +8,7 @@
  * Assume that a grocery list will have no more than 10 items.
  * A GroceryList object should have the following methods and constructor:
  * public GroceryList() constructs a new empty grocery list.
- * public void add(GroceryltemOrder item) adds the given item order to this list, if the list is not full (i.e., has fewer than 10 items).
+ * public void add(GroceryItemOrder item) adds the given item order to this list, if the list is not full (i.e., has fewer than 10 items).
  * public double getTotalCost() returns the total sum cost of all grocery item orders in this list.
  * </p>
  */
