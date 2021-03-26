@@ -1,4 +1,5 @@
-package com.company;
+//removed to allow compatibility with the com.company-less prog.
+//package com.company;
 
 import java.util.ArrayList;
 import java.util.Collections;
