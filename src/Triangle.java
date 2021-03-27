@@ -1,20 +1,41 @@
-/**
- * Sheet 4 question 4.
- * <p>
- *     Design  a  new Triangle class  that  extends  the  abstract GeometricObject class.
- * Draw  the  UML diagram for the classes Triangle and GeometricObject and then implement the Triangle class.
- * Write a  test  program  that  prompts  the  user  to  enter  three  sides  of  the  triangle,  a  color,  and  a Boolean value to indicate whether the triangle is filled.
- * The program should create a Triangle object with these sides and set the color and filled properties using the input.
- * The program should display the area, perimeter, color, and true or false to indicate whether it is filled or not.
- * </p>
- */
-public class Triangle extends GeometricObject{
-    //TODO create variables related to the Triangle
+//walid ownership copyright ananas
+//omar ownership tomato
 
-    //TODO create getters and setters for the Triangle
+package classes;
 
-    //TODO create constructors for the Triangle
+public class Triangle extends classes.GeometricObject {
+    private double side1;
+    private double side2;
+    private double side3;
 
-    //TODO create a main for interactively testing all the previous
 
+    public Triangle(String color, boolean filled, double side1, double side2, double side3) {
+        super(color, filled);
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+    }
+    public double getArea()
+    {
+        double semiperimeter = this.getPerimeter() / 2;
+        double area= Math.sqrt(semiperimeter * (semiperimeter-side1) * (semiperimeter-side2) * (semiperimeter*side3));
+                return area;
+    }
+
+    public double getPerimeter()
+    {
+        double Perimeter = side1 + side3 + side2;
+        return Perimeter;
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "side1=" + side1 +
+                ", side2=" + side2 +
+                ", side3=" + side3 +
+                ",color="+getColor()+
+                ",filled="+isFilled()+
+                '}';
+    }
 }

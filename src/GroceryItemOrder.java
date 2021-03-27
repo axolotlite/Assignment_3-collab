@@ -11,9 +11,22 @@
  *  </p>
  */
 public class GroceryItemOrder {
-    //TODO implement variables
-
-    //TODO implement setter and getter
-
-    //TODO implement a constructor
+	//TODO implement variables
+	private String name;
+	private int quantity;
+	private double pricePerUnit;
+	//TODO implement setter and getter	//No getter required
+	public void setQuantity(int quantity) {
+	this.quantity = quantity;
+	}
+	//TODO implement a constructor
+	public GroceryItemOrder(String name, double pricePerUnit) {
+	this.name = name;
+	this.pricePerUnit = pricePerUnit;
+	this.quantity = 1;
+	}
+	//Implementing the getCost method
+	public double getCost() {
+	return pricePerUnit * quantity;
+	}
 }
