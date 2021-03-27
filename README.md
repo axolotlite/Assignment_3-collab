@@ -10,3 +10,6 @@ When making a commit.
 * Write a short comment explaining what you've done
 * Do not remove the TODO, instead change its content to explain what should be done next
 * Leave work for other people to do. (Don't finish the whole assignment then commit it all at once)
+
+# This assignment is complete.
+I'd like to thank everyone who participated in this assignment.
