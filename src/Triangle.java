@@ -1,7 +1,7 @@
 //walid ownership copyright ananas
 //omar ownership tomato
 
-package classes;
+//package classes;
 
 public class Triangle extends classes.GeometricObject {
     private double side1;
@@ -17,25 +17,21 @@ public class Triangle extends classes.GeometricObject {
     }
     public double getArea()
     {
-        double semiperimeter = this.getPerimeter() / 2;
-        double area= Math.sqrt(semiperimeter * (semiperimeter-side1) * (semiperimeter-side2) * (semiperimeter*side3));
-                return area;
+        double semiPerimeter = this.getPerimeter() / 2;
+        return Math.sqrt(semiPerimeter * (semiPerimeter-side1) * (semiPerimeter-side2) * (semiPerimeter-side3));
     }
 
     public double getPerimeter()
     {
-        double Perimeter = side1 + side3 + side2;
-        return Perimeter;
+        return side1 + side3 + side2;
     }
 
     @Override
     public String toString() {
-        return "Triangle{" +
-                "side1=" + side1 +
-                ", side2=" + side2 +
-                ", side3=" + side3 +
-                ",color="+getColor()+
-                ",filled="+isFilled()+
-                '}';
+        return "Triangle\n" +
+                "\nArea: " + this.getArea() +
+                "\nPerimeter: " + this.getPerimeter() +
+                "\nColor: " + getColor()+
+                "\nFilled: " + isFilled();
     }
 }

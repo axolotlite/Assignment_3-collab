@@ -1,7 +1,7 @@
 //commented out due to lack of com.company in this file hierarchy.
 //package com.company;
 
-import classes.Triangle;
+//import classes.Triangle;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,14 +50,14 @@ public class Main {
         String color;
         System.out.println("Wanna build a triangle? yes lets do it"); wait(2000);
 
-        System.out.println("Enter side 1 : ");  side1 = input.nextDouble();
-        System.out.println("Enter side 2 : ");  side2 = input.nextDouble();
-        System.out.println("Enter side 3 : ");  side3 = input.nextDouble();
+        System.out.print("Enter side 1 : ");  side1 = input.nextDouble();
+        System.out.print("Enter side 2 : ");  side2 = input.nextDouble();
+        System.out.print("Enter side 3 : ");  side3 = input.nextDouble();
 
-        System.out.println("Whats its color? :"); color = input.next();
-        System.out.println("Is it filled? :"); filled = input.nextBoolean();
+        System.out.print("Whats its color? :"); color = input.next();
+        System.out.print("Is it filled? (true or false):"); filled = input.nextBoolean();
 
-        classes.Triangle triangle = new Triangle(color,filled,side1,side2,side3);
+        Triangle triangle = new Triangle(color,filled,side1,side2,side3);
 
         System.out.println("Nice...Here is your triangle ");wait(1500);
 
@@ -77,8 +77,8 @@ public class Main {
         item.setQuantity(4);
         groceryList.add(item);
 
-        System.out.println("You Bought 5 Ketchups for 12$");wait(1500);
-        System.out.println("You Bought 4 Mayonaise for 19$");wait(1500);
+        System.out.println("You Bought 5 Ketchups for 12$ each");wait(1500);
+        System.out.println("You Bought 4 Mayonaise for 19$ each");wait(1500);
 
         System.out.println("Total Price : "+ groceryList.getTotalCost());
 
